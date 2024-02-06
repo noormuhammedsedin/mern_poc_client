@@ -6,7 +6,7 @@ export const Banner = () => {
     const [data,setData]=useState([])
     const [value,setValue]=useState('')
     useEffect(() => {
-        fetch("http://localhost:5000/all-books").then(res => res.json()).then(data =>setBooks(data))
+        fetch("https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/all-books").then(res => res.json()).then(data =>setBooks(data))
     }, [])
     const serachBook=()=>{
       const filterBook=books.filter((e)=>{

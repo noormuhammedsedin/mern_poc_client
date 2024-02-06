@@ -60,7 +60,7 @@ const EditBooks = () => {
     console.log(bookObj)
 
     // update the book object
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/book/${id}`, {
       method: "PUT",
 
       headers: {

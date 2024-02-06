@@ -55,7 +55,7 @@ const UploadBook = () => {
       bookPdfUrl,
     };
     // console.log(dataObj)
-    fetch("http://localhost:5000/upload-book", {
+    fetch("https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/upload-book", {
       method: "POST",
 
       headers: {
