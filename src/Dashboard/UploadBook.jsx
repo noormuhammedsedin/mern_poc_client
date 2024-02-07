@@ -55,7 +55,7 @@ const UploadBook = () => {
       bookPdfUrl,
     };
     // console.log(dataObj)
-    fetch("https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/upload-book", {
+    fetch("https://mern-poc-back.onrender.com/upload-book", {
       method: "POST",
 
       headers: {

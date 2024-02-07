@@ -5,7 +5,7 @@ const BestSeller = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch("https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/all-books").then(res => res.json()).then(data =>setBooks(data.slice(0, 8)))
+        fetch("https://mern-poc-back.onrender.com/all-books").then(res => res.json()).then(data =>setBooks(data.slice(0, 8)))
     }, [])
 
     return (

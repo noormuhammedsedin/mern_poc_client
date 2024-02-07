@@ -60,7 +60,7 @@ const EditBooks = () => {
     console.log(bookObj)
 
     // update the book object
-    fetch(`https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/book/${id}`, {
+    fetch(`https://mern-poc-back.onrender.com/book/${id}`, {
       method: "PUT",
 
       headers: {

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ManageBooks = () => {
     const [allBooks, setAllBooks] = useState([]);
     useEffect(() => {
-        fetch(`https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/all-books`)
+        fetch(`https://mern-poc-back.onrender.com/all-books`)
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data);
@@ -17,7 +17,7 @@ const ManageBooks = () => {
     // delete a books
     const handleDelete = (id) => {
         // console.log(id)
-        fetch(`https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/book/${id}`, {
+        fetch(`https://mern-poc-back.onrender.com/book/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

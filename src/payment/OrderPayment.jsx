@@ -14,7 +14,7 @@ const Store = ( {title,imageUrl,bookPdfUrl}) => {
   useEffect(() => {
     const fetchClientToken = async () => {
       try {
-        const response = await fetch("https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/payment");
+        const response = await fetch("https://mern-poc-back.onrender.com/payment");
         const clientToken = await response.json();
         setClientToken(clientToken);
       } catch (error) {
@@ -29,7 +29,7 @@ const Store = ( {title,imageUrl,bookPdfUrl}) => {
     try {
       setLoading(true);
       const { nonce } = await instance.requestPaymentMethod();
-      const response = await axios.post("https://mern-juctvtvto-noormuhammedsedins-projects.vercel.app/payment",{ nonce,cart});
+      const response = await axios.post("https://mern-poc-back.onrender.com/payment",{ nonce,cart});
       setStatus(true)
       setLoading(false);
       // navigate("/");
